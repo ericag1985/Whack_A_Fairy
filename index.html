@@ -16,9 +16,11 @@
   </head>
 
   <body>
-    <a-scene>
-      <!--stats-->
-      <!--physics="debug:true;"-->
+    <a-scene arjs='debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+      <a-marker preset="custom" type="pattern" url="https://ericag1985.github.io/Whack_A_Fairy/fairy-marker.patt">
+        <a-box position='0 0.5 0' color="red"></a-box>
+      </a-marker>
+
       <a-assets>
         <a-asset-item id="fairy" src="models/fairy/scene.gltf"></a-asset-item>
         <a-asset-item id="broom" src="models/broom/scene.gltf"></a-asset-item>
@@ -27,10 +29,6 @@
         <a-asset-item id="moon" src="models/moon/scene.gltf"></a-asset-item>
         <a-asset-item id="cauldron" src="models/cauldron/scene.gltf"></a-asset-item>
       </a-assets>
-
-      <a-marker preset="custom" type="pattern" url="https://ericag1985.github.io/Whack_A_Fairy/fairy-marker.patt">
-        <a-box position='0 0.5 0' color="red"></a-box>
-      </a-marker>
 
       <!-- cauldron -->
       <a-entity
