@@ -76,11 +76,11 @@
         static-body>
       </a-plane>
 
-        <a-camera look-controls position="0 1.5 0">
+        <a-entity camera look-controls position="0 1.5 0">
           <!-- score -->
           <a-text id="score" value="Score" position="-0.2 -0.6 -1" color="white" width="5" anchor="left"></a-text>
 
-          <a-marker preset="custom" type="pattern" url="fairy-marker.patt">
+          <a-marker preset="custom" type="pattern" url="https://ericag1985.github.io/Whack_A_Fairy/pattern-marker.patt">
             <!-- broom -->
             <a-entity
               rotation="120 0 0"
@@ -92,7 +92,7 @@
                 gltf-model="#broom"></a-entity>
             </a-entity>
           </a-marker>
-        </a-camera>
+        </a-entity>
     </a-scene>
 
     <script>
